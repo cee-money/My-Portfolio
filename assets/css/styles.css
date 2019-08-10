@@ -13,10 +13,42 @@
     padding-bottom: 0.1rem
 }
 
-.header {
+.header, #hello, .contact-text {
     color: goldenrod
+}
+
+.btn-default {
+    background-color: goldenrod;
+    color: darkslategrey;
+}
+
+.btn-default:hover {
+    background-color: darkgoldenrod;
+    color: black
+}
+
+
+hr {
+    border: solid;
+    border-color: goldenrod;
+    border-width: 0.5px
 }
 
 .header:hover { 
     color: white
-  }
+}
+
+.floaters {
+    float: right
+}
+
+.img-thumbnail{
+    transform: rotate(90deg)
+}
+
+
+/* .jumbotron{
+    border: solid;
+    border-color: goldenrod;
+    border-width: 2px
+} */
