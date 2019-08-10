@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css?family=Oranienbaum&display=swap" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fd64f95310.js"></script>    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <title>Carolyn Moneymaker</title>
@@ -16,80 +17,41 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark">
         <a class="navbar-brand" href="index.html" id="logo">CM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button id="bars" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
         </button>
-    
-        <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link header" href="index.html">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link header" href="work.html">Work History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link header" href="projects.html">Past Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link header" href="contact.html">Contact Carolyn</a>
-                </li>
-            </ul>
-            <a class="nav-link header" href="https://www.linkedin.com/in/carolynmoneymakerp/" target="_blank">LinkedIn</a>
-            <a class="nav-link header" href="https://github.com/cee-money" target="_blank">GitHub</a>
-        
+        <div class="collapse navbar-collapse" id="dropdown-menu" data-show="false">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link header" href="index.html">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link header dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Work History
+                </a>
+                <div class="dropdown-menu bg-dark header" aria-labelledby="navbarDropdown" data-show="false" id="dropdown-menu1">
+                    <a class="dropdown-item header" href="work.html">RESUME</a>
+                    <a class="dropdown-item header" href="https://www.linkedin.com/in/carolynmoneymakerp/" target="_blank" id="linkedin">LINKEDIN</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link header dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                </a>
+                <div class="dropdown-menu bg-dark header" aria-labelledby="navbarDropdown" data-show="false" id="dropdown-menu2">
+                    <a class="dropdown-item header" href="projects.html">GALLERY</a>
+                    <a class="dropdown-item header" href="https://github.com/cee-money" target="_blank" id="github">GITHUB</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link header" href="contact.html">Contact Carolyn</a>
+            </li>   
+        </ul>   
         </div>
     </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button id="bars" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="dropdown-menu" data-show="false">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
-
     
-          <script>
-          
-            $("#bars").on("click", function() {
-
-                if ($("#dropdown-menu").attr("data-show")==="false") {
-                    // console.log("show it")
-                    $("#dropdown-menu").show()
-                    $("#dropdown-menu").attr("data-show", "true")
-                } else if ($("#dropdown-menu").attr("data-show")==="true") {
-                    // console.log("collapse it")
-                    $('#dropdown-menu').hide()
-                    $("#dropdown-menu").attr("data-show", "false")
-                }
-                
-            })
-
-          
-          </script>
+    <script src="assets/js/app.js"></script>
     
 </body>
 </html>

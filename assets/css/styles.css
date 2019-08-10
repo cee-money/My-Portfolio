@@ -17,22 +17,54 @@
     color: goldenrod
 }
 
-#hello {
-    color: goldenrod
+.fa{
+    color:darkgoldenrod;
+    padding: 8px;
+    border: solid;
+    border-width: 1px;
+    border-color: darkgoldenrod
 }
+
+.dropdown-item:hover{
+    color: white;
+    background-color:#343a40
+}
+
+.dropdown-menu{
+    border: solid;
+    border-width: 1px;
+    border-color: darkgoldenrod
+}
+
+#hello {
+    color: goldenrod;
+    font-family: 'Oranienbaum', serif;
+}
+
+/* #wave {
+    margin-left: 2px;
+    color: goldenrod;
+    transform: rotate(30deg);
+    font-size: 35px;
+    position: relative;
+    top: -8px
+} */
+
+
 
 .contact-text {
     color: goldenrod
 }
 
+
 .btn-default {
     background-color: darkgoldenrod;
-    color: black
+    color: #343a40
 }
 
 .btn-default:hover { 
     background-color: goldenrod;
-    color: darkslategrey;
+    color: white;
 }
 
 
@@ -46,10 +78,11 @@ hr {
     color: white
 }
 
-.floaters {
-    float: right
-}
 
-.img-thumbnail{
-    transform: rotate(90deg)
+img{
+    transform: rotate(90deg);
+    height: 200px;
+    width: auto;
+    padding: 1px;
+    border: solid 2px darkgoldenrod
 }

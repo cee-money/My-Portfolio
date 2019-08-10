@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oranienbaum&display=swap" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -16,28 +17,36 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark">
         <a class="navbar-brand" href="index.html" id="logo">CM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button id="bars" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
         </button>
-    
-        <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link header" href="index.html">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link header" href="work.html">Work History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link header" href="projects.html">Past Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link header" href="contact.html">Contact Carolyn</a>
-                </li>
-            </ul>
-            <a class="nav-link header" href="https://www.linkedin.com/in/carolynmoneymakerp/" target="_blank">LinkedIn</a>
-            <a class="nav-link header" href="https://github.com/cee-money" target="_blank">GitHub</a>
-        
+        <div class="collapse navbar-collapse" id="dropdown-menu" data-show="false">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link header" href="index.html">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link header dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Work History
+                </a>
+                <div class="dropdown-menu bg-dark header" aria-labelledby="navbarDropdown" data-show="false" id="dropdown-menu1">
+                    <a class="dropdown-item header" href="work.html">RESUME</a>
+                    <a class="dropdown-item header" href="https://www.linkedin.com/in/carolynmoneymakerp/" target="_blank" id="linkedin">LINKEDIN</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link header dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                </a>
+                <div class="dropdown-menu bg-dark header" aria-labelledby="navbarDropdown" data-show="false" id="dropdown-menu2">
+                    <a class="dropdown-item header" href="projects.html">GALLERY</a>
+                    <a class="dropdown-item header" href="https://github.com/cee-money" target="_blank" id="github">GITHUB</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link header" href="contact.html">Contact Carolyn</a>
+            </li>   
+        </ul>   
         </div>
     </nav>
     <br/>
@@ -55,11 +64,11 @@
                 <form method="POST" action="https://formspree.io/moneymaker.carolyn@gmail.com" id="form">
                     <div class="form-group contact-text col-md-4">
                         <label for="formGroupExampleInput">Name</label>
-                        <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
+                        <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Jane Doe">
                     </div>
                     <div class="form-group contact-text col-md-4">
                         <label for="formGroupExampleInput2">Email</label>
-                        <input type="email" name="email" class="form-control" id="formGroupExampleInput2" placeholder="email@gmail.com">
+                        <input type="email" name="email" class="form-control" id="formGroupExampleInput2" placeholder="me@myemailaddress.com">
                     </div>
                     <div class="form-group contact-text col-md-10">
                         <label for="exampleFormControlTextarea1">Message</label>
@@ -76,9 +85,7 @@
         </div>
     </div>
 
-
-
-
+    <script src="assets/js/app.js"></script>
 
 </body>
 </html>
