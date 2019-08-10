@@ -13,7 +13,15 @@
     padding-bottom: 0.1rem
 }
 
-.header, #hello, .contact-text {
+.header {
+    color: goldenrod
+}
+
+#hello {
+    color: goldenrod
+}
+
+.contact-text {
     color: goldenrod
 }
 
