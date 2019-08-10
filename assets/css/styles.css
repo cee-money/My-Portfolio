@@ -1,3 +1,4 @@
+/* NAVBAR */
 #logo {
     font-family: 'Oranienbaum', serif;
     font-size: 60px;
@@ -15,6 +16,10 @@
 
 .header {
     color: goldenrod
+}
+
+.header:hover { 
+    color: white
 }
 
 .fa{
@@ -36,9 +41,18 @@
     border-color: darkgoldenrod
 }
 
+/* HOME PAGE */
 #hello {
     color: goldenrod;
     font-family: 'Oranienbaum', serif;
+}
+
+img{
+    transform: rotate(90deg);
+    height: 200px;
+    width: auto;
+    padding: 1px;
+    border: solid 2px darkgoldenrod
 }
 
 /* #wave {
@@ -50,10 +64,13 @@
     top: -8px
 } */
 
-
+/* CONTACT PAGE */
+#contact-header{
+    font-family: 'Oranienbaum', serif;
+}
 
 .contact-text {
-    color: goldenrod
+    color: goldenrod;
 }
 
 
@@ -74,15 +91,80 @@ hr {
     border-width: 0.5px
 }
 
-.header:hover { 
-    color: white
+
+@media screen and (max-width: 1198px) {
+
+    img{
+        height: 150px;
+        width: auto
+    }
 }
 
+@media screen and (max-width: 991px) {
 
-img{
-    transform: rotate(90deg);
-    height: 200px;
-    width: auto;
-    padding: 1px;
-    border: solid 2px darkgoldenrod
+    img{
+        height: auto;
+        margin-right: 5px;
+        width: 150px;
+        position: relative;
+        top: 50px
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #hello {
+        position: relative;
+        top: -20px;
+        margin-bottom: 0;
+        padding: 0
+    }
+
+    #bio {        
+        margin-top: 50px
+    }
+
+    .lead {
+        font-size: 14px
+    }
+
+    img{
+        height: 200px;
+        width: auto;
+        margin: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: -5px;
+    }
+
+    #contact-info{
+        font-size: 8px
+    }
+}
+
+@media screen and (max-width: 392px) {
+
+    #hello{
+        font-size: 40px
+    }
+
+    img {
+        height: 100px
+    }
+
+    .lead{
+        font-size: 10px
+    }
+
+    #bio{
+        margin-top: 20px;
+        font-size: 10px
+    }
+}
+
+@media screen and (max-width: 316px) {
+
+    #hello{
+        font-size: 35px
+    }
 }
