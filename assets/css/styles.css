@@ -18,13 +18,13 @@
 }
 
 .btn-default {
-    background-color: goldenrod;
-    color: darkslategrey;
-}
-
-.btn-default:hover {
     background-color: darkgoldenrod;
     color: black
+}
+
+.btn-default:hover { 
+    background-color: goldenrod;
+    color: darkslategrey;
 }
 
 
