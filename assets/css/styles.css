@@ -22,7 +22,7 @@
     color: white
 }
 
-.fa{
+.fa {
     color:darkgoldenrod;
     padding: 8px;
     border: solid;
@@ -36,9 +36,7 @@
 }
 
 .dropdown-menu{
-    border: solid;
-    border-width: 1px;
-    border-color: darkgoldenrod
+    border: solid 1px darkgoldenrod;
 }
 
 /* HOME PAGE */
@@ -47,7 +45,7 @@
     font-family: 'Oranienbaum', serif;
 }
 
-img{
+#me-pic{
     transform: rotate(90deg);
     height: 200px;
     width: auto;
@@ -91,10 +89,26 @@ hr {
     border-width: 0.5px
 }
 
+/* PROJECT GALLERY */
+.card-header{
+    border-bottom: solid 1px darkgoldenrod;
+}
 
+.card-title{
+    color: goldenrod
+}
+
+.img-thumbnail:hover{
+    border: solid 2px darkgoldenrod;
+    padding: 10px;
+    box-shadow: 1px 2px 4px darkgoldenrod
+
+}
+
+/* RESPONSIVENESS */
 @media screen and (max-width: 1198px) {
 
-    img{
+    #me-pic{
         height: 150px;
         width: auto
     }
@@ -102,7 +116,7 @@ hr {
 
 @media screen and (max-width: 991px) {
 
-    img{
+    #me-pic{
         height: auto;
         margin-right: 5px;
         width: 150px;
@@ -128,7 +142,7 @@ hr {
         font-size: 14px
     }
 
-    img{
+    #me-pic{
         height: 200px;
         width: auto;
         margin: 0;
@@ -148,7 +162,7 @@ hr {
         font-size: 40px
     }
 
-    img {
+    #me-pic{
         height: 100px
     }
 
