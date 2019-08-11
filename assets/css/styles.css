@@ -39,7 +39,7 @@
     border: solid 1px darkgoldenrod;
 }
 
-/* HOME PAGE */
+/* ABOUT PAGE */
 #hello {
     color: goldenrod;
     font-family: 'Oranienbaum', serif;
@@ -62,32 +62,6 @@
     top: -8px
 } */
 
-/* CONTACT PAGE */
-#contact-header{
-    font-family: 'Oranienbaum', serif;
-}
-
-.contact-text {
-    color: goldenrod;
-}
-
-
-.btn-default {
-    background-color: darkgoldenrod;
-    color: #343a40
-}
-
-.btn-default:hover { 
-    background-color: goldenrod;
-    color: white;
-}
-
-
-hr {
-    border: solid;
-    border-color: goldenrod;
-    border-width: 0.5px
-}
 
 /* PROJECT GALLERY */
 .card-header{
@@ -104,6 +78,29 @@ hr {
     box-shadow: 1px 2px 4px darkgoldenrod
 
 }
+
+
+/* CONTACT PAGE */
+.contact-text {
+    color: goldenrod;
+}
+
+.btn-default {
+    background-color: darkgoldenrod;
+    color: #343a40
+}
+
+.btn-default:hover { 
+    background-color: goldenrod;
+    color: white;
+}
+
+hr {
+    border: solid;
+    border-color: goldenrod;
+    border-width: 0.5px
+}
+
 
 /* RESPONSIVENESS */
 @media screen and (max-width: 1198px) {
