@@ -46,7 +46,7 @@
 }
 
 #me-pic{
-    transform: rotate(90deg);
+    background: #757b7e;
     height: 200px;
     width: auto;
     padding: 1px;
@@ -61,6 +61,12 @@
     position: relative;
     top: -8px
 } */
+
+
+/* WORK HISTORY */
+.aside{
+    font-size: 11px
+}
 
 
 /* PROJECT GALLERY */

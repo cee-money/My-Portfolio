@@ -1,4 +1,4 @@
-// Projects Page
+// NAVIGVATION
 $("#bars").on("click", function() {
 
     if ($("#dropdown-menu").attr("data-show")==="false") {
@@ -60,7 +60,7 @@ $("#github").on("click", function(){
 });
 
 
-// Contact Page
+// CONTACT PAGE
 $("#submit").on("click", function(){
 
     $("input").val("")
