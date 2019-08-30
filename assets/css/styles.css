@@ -42,7 +42,8 @@
 /* ABOUT PAGE */
 #hello {
     color: goldenrod;
-    font-family: 'Oranienbaum', serif;
+    font-family: 'Times New Roman', serif;
+    font-size: 60px;
 }
 
 #me-pic{
